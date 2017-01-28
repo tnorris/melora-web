@@ -1,5 +1,6 @@
-PATH
-  remote: ../melora/
+GIT
+  remote: git@github.com:tnorris/melora.git
+  revision: eb5122d583d31c5abfe039eab6d24b9488fa4420
   specs:
     melora (0.2.0)
 

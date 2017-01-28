@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'melora', path: '../melora/'
+gem 'melora', git: 'git@github.com:tnorris/melora.git'
 
 gem 'sinatra'
 
