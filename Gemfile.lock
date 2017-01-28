@@ -1,18 +1,29 @@
-PATH
-  remote: ../melora/
+GIT
+  remote: git@github.com:tnorris/melora.git
+  revision: eb5122d583d31c5abfe039eab6d24b9488fa4420
   specs:
     melora (0.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.1)
+    method_source (0.8.2)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    redis (3.3.3)
+    redis-store (1.3.0)
+      redis (>= 2.2)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    slop (3.6.0)
     tilt (2.0.5)
 
 PLATFORMS
@@ -20,7 +31,9 @@ PLATFORMS
 
 DEPENDENCIES
   melora!
+  pry
+  redis-store
   sinatra
 
 BUNDLED WITH
-   1.13.2
+   1.13.7
